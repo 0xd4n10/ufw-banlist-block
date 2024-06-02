@@ -16,7 +16,7 @@ def block_ip(ip_address):
 
 def save_ufw():
     #Make sure its enabled before saving
-    subprocess.run(["sudo", "ufw", , "--force", "enable"], check=True)
+    subprocess.run(["sudo", "ufw", "--force", "enable"], check=True)
     with open(saved_rules_file, 'w') as outfile:
         subprocess.run(["sudo", "ufw", "status"], stdout=outfile, stderr=subprocess.PIPE)
 
