@@ -22,7 +22,7 @@ def save_ufw():
 
 def reset_ufw():
     subprocess.run(["sudo", "ufw", "--force", "reset"], check=True)
-    subprocess.run(["sudo", "ufw", , "--force", "enable"], check=True)
+    subprocess.run(["sudo", "ufw", "--force", "enable"], check=True)
 
 def restore_rules():
     with open(saved_rules_file, 'r') as file:
