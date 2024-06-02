@@ -1,11 +1,12 @@
 # ufw-banlist-block
 
 ### Description
-Janky python script to backup/restore UFW rules and block malicous IP addresses from the [Binary defence banlist](https://www.binarydefense.com/banlist.txt)
+Janky python script to backup/restore UFW rules and block malicous IP addresses from the [Binary defence banlist](https://www.binarydefense.com/banlist.txt) and the [Malcore API](https://malcore.io/).
 
 ### Add path to UFW backup
 
-- Change line 6 of the script to reflect where you want to store the UFW backup
+- Change line 8 of the script to reflect where you want to store the UFW backup
+- Change line 71 if you want to use Malcore API (optional) 
 
 ### Setting Up a Daily Cron Job
 
