@@ -37,7 +37,7 @@ def restore_rules():
                 rule = f"sudo ufw {action} {direction}".strip()
                 subprocess.run(rule.split(), check=True)
                 print(f"Restored rule: {rule}")
-    exit()
+    
 
 def main():
     
